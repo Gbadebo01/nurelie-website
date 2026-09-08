@@ -143,7 +143,7 @@ footer{border-top:1px solid var(--border); background:var(--bg-card); padding:va
 .grid-cards{display:grid; grid-template-columns:repeat(var(--n,3),1fr); gap:20px;}
 @media (max-width:860px){ .grid-cards{grid-template-columns:repeat(2,1fr);} }
 @media (max-width:640px){ .grid-cards{grid-template-columns:1fr;} }
-.phone{border-radius:36px; border:1px solid var(--border); box-shadow:0 30px 70px var(--shadow); overflow:hidden;}
+.phone{max-width:300px; margin:0 auto; border-radius:36px; border:1px solid var(--border); box-shadow:0 30px 70px var(--shadow); overflow:hidden;}
 .safety{background:var(--bg-alt); border-radius:var(--radius-lg); padding:var(--space-4);}
 section.py{padding:var(--space-7) 0;}
 @media (max-width:640px){ section.py{padding:var(--space-6) 0;} }
@@ -343,7 +343,7 @@ section.py{padding:var(--space-7) 0;}
           </div>
           <p style="margin-top:16px; font-size:13px; color:var(--text-muted);">Free to start · Available on iOS and Android</p>
         </div>
-        <div style="position:relative;">
+        <div style="position:relative; max-width:300px; margin:0 auto;">
           <figure style="margin:0;"><div class="phone"><img src="/shots/harlow.jpg" alt="Nurélie Harlow parenting coach showing personalized guidance for a toddler bedtime challenge"></div></figure>
           <div class="chip" style="position:absolute; top:-14px; right:10px;">3 years old</div>
           <div class="chip" style="position:absolute; bottom:40px; left:-18px;">Transitions are hardest</div>
