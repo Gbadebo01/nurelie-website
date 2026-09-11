@@ -52,7 +52,7 @@ button{font-family:inherit; font-size:inherit; color:inherit; background:none; b
 html{scroll-behavior:smooth;}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms !important; transition-duration:.001ms !important;} }
 body{margin:0; background:var(--bg); color:var(--text); font-family:var(--font-body); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;}
-img,svg{max-width:100%; display:block;}
+img,svg{max-width:100%; height:auto; display:block;}
 a{color:inherit; text-decoration:none;}
 :focus-visible{outline:2px solid var(--accent-strong); outline-offset:3px;}
 h1,h2,h3{font-family:var(--font-display); font-weight:450; line-height:1.12; margin:0;}
@@ -143,7 +143,7 @@ footer{border-top:1px solid var(--border); background:var(--bg-card); padding:va
 .grid-cards{display:grid; grid-template-columns:repeat(var(--n,3),1fr); gap:20px;}
 @media (max-width:860px){ .grid-cards{grid-template-columns:repeat(2,1fr);} }
 @media (max-width:640px){ .grid-cards{grid-template-columns:1fr;} }
-.phone{border-radius:36px; border:1px solid var(--border); box-shadow:0 30px 70px var(--shadow); overflow:hidden;}
+.phone{max-width:300px; margin:0 auto; border-radius:36px; border:1px solid var(--border); box-shadow:0 30px 70px var(--shadow); overflow:hidden;}
 .safety{background:var(--bg-alt); border-radius:var(--radius-lg); padding:var(--space-4);}
 section.py{padding:var(--space-7) 0;}
 @media (max-width:640px){ section.py{padding:var(--space-6) 0;} }
@@ -264,6 +264,8 @@ section.py{padding:var(--space-7) 0;}
               
               <a href="/faq">FAQ<small>Common questions, answered plainly</small></a>
               
+              <a href="/pricing">Pricing<small>Plans and what's included</small></a>
+              
             </div>
             
             <div class="mega-col">
@@ -315,7 +317,7 @@ section.py{padding:var(--space-7) 0;}
   <div class="macc">
     <button class="macc-btn">Resources<span class="ico"></span></button>
     <div class="macc-panel">
-      <a href="/journal">Journal</a><a href="/faq">FAQ</a><a href="/about">About Nurélie</a><a href="/trust-safety">Trust & Safety</a>
+      <a href="/journal">Journal</a><a href="/faq">FAQ</a><a href="/pricing">Pricing</a><a href="/about">About Nurélie</a><a href="/trust-safety">Trust & Safety</a>
     </div>
   </div>
   
@@ -340,7 +342,7 @@ section.py{padding:var(--space-7) 0;}
   <section class="py reveal" style="">
     <div class="wrap" style="max-width:820px;">
       
-      <div style="margin-top:0px;"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span aria-current="page">Parenting Challenges</span><span>/</span><span aria-current="page">Child Behavior</span></nav><p style="margin-top:14px; color:var(--text);">"Child behavior coach" usually means a search box full of general tips: count to three, offer choices, stay calm. Those ideas aren't wrong — but they don't know your child's age, temperament, what happened right before, or what you've already tried.</p><p style="margin-top:14px; color:var(--text);">Nurélie is built around a simpler idea: the same behavior means different things in different families. Tell Harlow, Nurélie's AI parenting companion, what's going on, and it uses your child's context to help you figure out a practical next step — not a diagnosis, and not a generic list.</p></div>
+      <div style="margin-top:0px;"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span aria-current="page">Parenting Challenges</span><span>/</span><span aria-current="page">Child Behavior</span></nav><div class="card" style="background:var(--bg-alt); border:none; margin-top:18px;"><strong>Quick answer</strong> &mdash; When your child won't listen, hits, melts down, or pushes back on everything, the internet gives you a hundred generic strategies. Nurélie asks what's actually happening with your child, and helps you decide what to try next.</div><p style="margin-top:14px; color:var(--text);">Parents searching for a child behavior coach are often looking for practical help with what their child is doing right now — hitting, refusing, melting down, arguing, or simply not listening. For some, that means wanting an actual professional; for most day-to-day moments, it means wanting a clear next step for a specific kid, not one more generic list of tips.</p><p style="margin-top:14px; color:var(--text);">Nurélie is a personalized parenting support app built around that second need. Tell Harlow, Nurélie's AI parenting companion, what's going on, and it uses your child's age, temperament, and history to help you figure out a practical next step — not a diagnosis, and not a substitute for a licensed behavior professional when that's genuinely what a situation calls for.</p></div>
     </div>
   </section>
   <section class="py reveal" style="">
@@ -358,7 +360,7 @@ section.py{padding:var(--space-7) 0;}
   <section class="py reveal" style="">
     <div class="wrap" style="max-width:820px;">
       <h2 class="h2">What parents often try</h2>
-      <div style="margin-top:20px;"><ul style="padding-left:22px; color:var(--text); line-height:1.8;"><li style="margin-bottom:10px;">Searching "toddler won't listen" or "defiant child" and reading through generic listicles.</li><li style="margin-bottom:10px;">Asking a parenting group on social media and getting a dozen conflicting answers.</li><li style="margin-bottom:10px;">Trying a strategy from a book that was written for a different kind of kid.</li></ul><p style="margin-top:16px; color:var(--text-muted);">Nurélie doesn't replace that research — it filters it through your actual child: their age, what's worked before, and what's happening around this specific moment.</p></div>
+      <div style="margin-top:20px;"><ul style="padding-left:22px; color:var(--text); line-height:1.8;"><li style="margin-bottom:10px;">Searching "toddler won't listen" or "defiant child" and reading through generic listicles.</li><li style="margin-bottom:10px;">Asking a parenting group on social media and getting a dozen conflicting answers.</li><li style="margin-bottom:10px;">Trying a strategy from a book that was written for a different kind of kid.</li></ul><p style="margin-top:16px; color:var(--text-muted);">Nurélie doesn't replace that research — it filters it through your actual child: their age, what's worked before, and what's happening around this specific moment. This often connects to <a href="/toddler-tantrums">toddler tantrums</a> and <a href="/emotional-regulation-for-kids">emotional regulation for kids</a> as well.</p></div>
     </div>
   </section>
   <section class="py reveal" style="">
@@ -384,7 +386,7 @@ section.py{padding:var(--space-7) 0;}
         </div>
         <div class="card" style="border-color:var(--accent-strong);">
           <span class="eyebrow">With Nurélie</span>
-          <p style="margin-top:14px; color:var(--text); line-height:1.7;">You tell Harlow your 3-year-old hit his sister after she took a toy, that this happens most in the late afternoon, and that time-outs haven't helped. Nurélie factors in the timing (likely fatigue), the trigger (object conflict), and what hasn't worked, and helps you think through a more specific next step.</p>
+          <p style="margin-top:14px; color:var(--text); line-height:1.7;">You tell Harlow your 3-year-old hit his sister after she took a toy, that this happens most in the late afternoon, and that time-outs haven't helped. Nurélie factors in the timing (afternoon fatigue may be one factor worth considering), the trigger (object conflict), and what hasn't worked, and helps you think through a more specific next step.</p>
         </div>
       </div></div>
     </div>
@@ -470,7 +472,7 @@ section.py{padding:var(--space-7) 0;}
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="/journal">Journal</a></li><li><a href="/faq">FAQ</a></li><li><a href="/about">About</a></li><li><a href="/trust-safety">Trust & Safety</a></li>
+          <li><a href="/journal">Journal</a></li><li><a href="/faq">FAQ</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/about">About</a></li><li><a href="/trust-safety">Trust & Safety</a></li>
         </ul>
       </div>
       
